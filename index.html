@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>case 1 - страница Form1</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Мой Form1</h1>
+            <div class="container-block">
+                <img class="container-center" src="img/form_img.jpg" alt="Image" height="100" width="800">
+            </div>
+
+            <form id="form1" method="POST">
+                <div class="form-group">
+                    <label for="named">Имя:</label>
+                    <input type="text" id="named" name="named" maxlength="32" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" maxlength="512" required>
+                </div>
+                <div class="radio-flex">
+                    <div>
+                        <label>
+                            <input type="radio" name="group" value="fire" checked>
+                            Тушение пожаров
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="group" value="check_state">
+                            Проверка состояния
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" maxlength="255" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+
+            <script src="js/script.js"></script>
+        </div>
+    </body>
+</html>
